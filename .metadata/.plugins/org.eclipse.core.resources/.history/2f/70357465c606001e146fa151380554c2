@@ -1,0 +1,20 @@
+package uap;
+public class uapp {
+	public static void main(String[] args) {
+		Scanner inpScanner = new Scanner(System.in);
+		System.out.println("Us alinacak sayi: ");
+		int n = inpScanner.nextInt();
+		
+		System.out.println("Ust olacak sayi: ");
+		int k = inpScanner.nextInt();	
+		int result = 1;
+		
+		int i = 1;
+		while (i <= k) {
+			result *= n;
+			i++;
+		}
+		System.out.println("Sonuc: " + result);
+	}
+
+}
